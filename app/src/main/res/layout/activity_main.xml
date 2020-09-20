@@ -2,12 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<<<<<<< Updated upstream
-=======
     <Button
         android:id="@+id/home_button2"
         style="@android:style/Widget.Material.Button"
@@ -20,7 +19,9 @@
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/home_button3"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop" />
 
     <Button
         android:id="@+id/home_button3"
@@ -38,31 +39,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
->>>>>>> Stashed changes
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< Updated upstream
-        android:text="@string/message1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-=======
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/home_title1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/secondary_text_light"
-        android:textSize="36sp"
-        android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/home_settingsButton"
-        app:layout_constraintEnd_toStartOf="@+id/home_settingsButton"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/home_settingsButton"
-        app:layout_constraintVertical_bias="0.083" />
 
     <Button
         android:id="@+id/home_button1"
@@ -84,9 +60,9 @@
         android:id="@+id/home_settingsButton"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="16dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
@@ -95,26 +71,16 @@
         app:srcCompat="@drawable/settingsIcon" />
 
     <EditText
-        android:id="@+id/Data "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/daily reminder "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/daily_reminder"
+        android:layout_width="141dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Medication needed today"
-        app:layout_constraintBottom_toTopOf="@+id/home_button2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/home_medsText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Data " />
->>>>>>> Stashed changes
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
