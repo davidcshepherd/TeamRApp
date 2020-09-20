@@ -9,14 +9,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    /*
+
     EditText ed1, ed2, ed3;
+
+     */
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /**************************************************
 
         ed1 = (EditText) findViewById(R.id.);
         ed2 = (EditText) findViewById(R.id.);
@@ -33,5 +44,15 @@ public class MainActivity extends AppCompatActivity {
                 notify.flags = Notification.FLAG_AUTO_CANCEL;
             }
         });
+
+        **************************************************/
+
+
     }
+
+    public void goToSettingsActivity (View view){
+        Intent intent = new Intent (this, activity_settings.class);
+        startActivity(intent);
+    }
+
 }
