@@ -5,6 +5,7 @@ import androidx.core.app.NotificationCompat;
 
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -15,13 +16,6 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     Button aNotification;
-
-    /*
-
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,16 +32,21 @@ public class MainActivity extends AppCompatActivity {
                         .setContentTitle("New Notification")
                         .setContentText(message)
                         .setAutoCancel(true);
-                Intent intent = new Intent(MainActivity.this,NotificationActivity.class);
+                Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("message",message);
+                PendingIntent pendingIntent= PendingIntent.getActivity(MainActivity.this,0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+                builder.setContentIntent(pendingIntent);
+                NotificationManager notificationManager =(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+                notificationManager.notify(0,builder.build());
+
+
             }
         });
-
-        /*************************************************
-
-    public void goToSettingsActivity (View view){
-        Intent intent = new Intent (this, activity_settings.class);
-        startActivity(intent);
     }
-     */
 
+        public void goToSettingsActivity (View view){
+            Intent intent = new Intent(this, activity_settings.class);
+            startActivity(intent);
+        }
 }
