@@ -20,7 +20,9 @@
         app:layout_constraintBottom_toTopOf="@+id/home_button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:targetApi="lollipop" />
+        tools:targetApi="lollipop"
+        android:onClick="goToCalendarActivity"
+        />
 
     <Button
         android:id="@+id/home_button3"
@@ -37,7 +39,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:targetApi="lollipop" />
+        tools:targetApi="lollipop"
+        android:onClick="goToMedInfoActivity"
+        />
 
 
     <Button
@@ -55,7 +59,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:targetApi="lollipop" />
+        tools:targetApi="lollipop"
+        android:onClick="goToMedsActivity"
+        />
 
     <ImageButton
         android:id="@+id/home_settingsButton"
@@ -84,7 +90,8 @@
         android:inputType="textPersonName"
         android:text="@string/home_medsText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
         android:id="@+id/bt_notification"
@@ -95,7 +102,8 @@
         app:layout_constraintBottom_toTopOf="@+id/home_button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

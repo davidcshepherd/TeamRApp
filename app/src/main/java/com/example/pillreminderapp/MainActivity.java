@@ -51,4 +51,25 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        public void goToCalendarActivity (View view){
+
+            Intent intent = new Intent(this, CalendarActivity.class);
+            startActivity(intent);
+
+        }
+
+        public void goToMedInfoActivity (View view){
+
+            Intent intent = new Intent(this, MedInfoActivity.class);
+            startActivity(intent);
+
+        }
+
+        public void goToMedsActivity (View view){
+
+            Intent intent = new Intent(this, MedsActivity.class);
+            startActivity(intent);
+
+        }
+
 }
