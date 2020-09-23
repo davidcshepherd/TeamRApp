@@ -3,15 +3,12 @@ package com.example.pillreminderapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         aNotification = findViewById(R.id.bt_notification);
         aNotification.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,13 +39,16 @@ public class MainActivity extends AppCompatActivity {
                 NotificationManager notificationManager =(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(0,builder.build());
 
-
             }
         });
+
     }
 
         public void goToSettingsActivity (View view){
-            Intent intent = new Intent(this, activity_settings.class);
+
+            Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
+
         }
+
 }
