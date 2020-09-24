@@ -12,7 +12,6 @@
         <activity android:name=".MedsActivity"></activity>
         <activity android:name=".MedInfoActivity" />
         <activity android:name=".CalendarActivity" />
-        <activity android:name=".NotificationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
