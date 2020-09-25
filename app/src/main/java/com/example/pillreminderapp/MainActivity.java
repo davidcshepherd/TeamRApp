@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
             .setSmallIcon(R.drawable.rx_icon)
             .setContentTitle("Daily Reminder")
-            .setContentText("Take your pills")
+            .setContentText("Take your pills!")
             .setStyle( new NotificationCompat.BigTextStyle())
             .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
