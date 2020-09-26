@@ -1,4 +1,7 @@
 <resources>
+
+    <!-- we love a commit lol -->
+
     <!-- Home Strings-->
     <string name="app_name">Pill Reminder App</string>
     <string name="home_title1">Pill Reminder App</string>
