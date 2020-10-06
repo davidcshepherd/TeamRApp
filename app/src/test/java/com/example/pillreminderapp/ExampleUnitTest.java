@@ -2,6 +2,10 @@ package com.example.pillreminderapp;
 
 import org.junit.Test;
 
+import com.example.pillreminderapp.Medication;
+
+import java.sql.Time;
+
 import static org.junit.Assert.*;
 
 /**
@@ -12,6 +16,9 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        Time time = new Time(10, 10, 10);
+
+        Medication medication = new Medication("Yeah", time);
+
     }
 }
