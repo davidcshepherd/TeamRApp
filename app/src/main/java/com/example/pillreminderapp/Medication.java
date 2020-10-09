@@ -11,6 +11,7 @@ public class Medication {
         this.time_taken = time_taken;
     }
 
+
     public String getName() {
         return name;
     }
