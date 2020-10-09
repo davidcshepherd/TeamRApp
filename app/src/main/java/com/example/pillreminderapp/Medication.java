@@ -5,10 +5,12 @@ import java.sql.Time;
 public class Medication {
     String name;
     Time time_taken;
+    String dosage;
 
     public Medication(String name, Time time_taken) {
         this.name = name;
         this.time_taken = time_taken;
+        this.dosage= dosage;
     }
 
 
@@ -27,4 +29,8 @@ public class Medication {
     public void setTime_taken(Time time_taken) {
         this.time_taken = time_taken;
     }
+
+    public String getDosage(){return dosage;}
+
+    public void setDosage(String aDosage){aDosage=dosage;}
 }
