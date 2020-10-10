@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 /*
 *Class helps with using SQLite open helper and creating a database
-* Made by: Deven Sharma uowo
+* Made by: Deven Sharma 
  */
 public class DatabaseHelper extends SQLiteOpenHelper
 {
