@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 /*
 *Class helps with using SQLite open helper and creating a database
-* Made by: Deven Sharma
+* Made by: Deven Sharma uwu
  */
 public class DatabaseHelper extends SQLiteOpenHelper
 {
@@ -16,6 +16,9 @@ public class DatabaseHelper extends SQLiteOpenHelper
     public static final String TABLE_NAME = "Medications_Table";
     public static final String COL_1 = "Name";
     public static final String COL_2 = "Time_taken";
+    public static final String COL_3 = "Days_to_refill";
+    public static final String COL_4 = "Med_type";
+
 
     public DatabaseHelper(@Nullable Context context )
     {
