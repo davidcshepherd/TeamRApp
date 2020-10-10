@@ -11,6 +11,8 @@
     <string name="home_medsText">Meds for today:</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+
+    <!-- lololol -->
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
