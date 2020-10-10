@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MedInfoActivity extends AppCompatActivity {
-
+// lolololol
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
