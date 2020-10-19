@@ -7,7 +7,7 @@
     <string name="home_title1">Pill Reminder App</string>
     <string name="home_button1">View Medications</string>
     <string name="home_button2">View Calendar</string>
-    <string name="home_button3">View Medical Info</string>
+    <string name="home_button3">Add Medication</string>
     <string name="home_medsText">Meds for today:</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
@@ -28,5 +28,8 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="notification">Notification</string>
+    <string name="AddMedication">Add Medication:</string>
+    <string name="medicationNameField">Medication Name</string>
+    <string name="SetReminderTime">Set Reminder Time</string>
 
 </resources>
