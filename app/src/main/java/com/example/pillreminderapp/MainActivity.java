@@ -2,6 +2,7 @@ package com.example.pillreminderapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -14,14 +15,8 @@ import android.widget.Button;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
+    private NotificationManagerCompat notificationManager;
 
-
-    NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
-            .setSmallIcon(R.drawable.rx_icon)
-            .setContentTitle("Daily Reminder")
-            .setContentText("Take your pills!")
-            .setStyle( new NotificationCompat.BigTextStyle())
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +24,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        notificationManager =NotificationManagerCompat.from(this);
+    }
+    public void sendOnChannel1(View v){
+        String title = "Title";
+        String notif= "Take your pills!";
+        android.app.Notification notification = new NotificationCompat.Builder(this,Notification.Channel_1_ID).setSmallIcon(R.drawable.pill_icon)
+                .setContentTitle(title)
+                .setContentText(notif)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_REMINDER)
+                .build();
+        notificationManager.notify(1,notification);
     }
 
         public void goToSettingsActivity (View view){
