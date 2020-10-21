@@ -4,14 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.os.Build;
+import android.app.Notification;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendOnChannel1(View v){
         String title = "Title";
         String notif= "Take your pills!";
-        android.app.Notification notification = new NotificationCompat.Builder(this,Notification.Channel_1_ID).setSmallIcon(R.drawable.pill_icon)
+        Notification notification = new NotificationCompat.Builder(this, AppNotif.Channel_1_ID).setSmallIcon(R.drawable.pill_icon)
                 .setContentTitle(title)
                 .setContentText(notif)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)

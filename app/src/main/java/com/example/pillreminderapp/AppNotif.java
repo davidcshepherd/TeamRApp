@@ -5,7 +5,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.os.Build;
 
-public class Notification extends Application {
+public class AppNotif extends Application {   ///this a class for the notifications
     public static final String Channel_1_ID="channel1";
     public static final String Channel_2_ID="channel2";
 
