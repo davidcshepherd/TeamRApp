@@ -1,4 +1,4 @@
-package com.example.pillreminderapp;
+package com.example.pillreminderapp.activities;
 
 import android.app.Application;
 import android.app.NotificationChannel;
