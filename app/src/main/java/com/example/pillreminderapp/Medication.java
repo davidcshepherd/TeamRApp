@@ -2,7 +2,7 @@ package com.example.pillreminderapp;
 
 import java.sql.Time;
 
-public class Medication {
+public class Medication {       ///this a class to model a medication object
     String name;
     Time time_taken;
     String dosage;

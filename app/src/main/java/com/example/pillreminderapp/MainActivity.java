@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         String title = "Title";
         String notif= "Take your pills!";
         Notification notification = new NotificationCompat.Builder(this, AppNotif.Channel_1_ID).setSmallIcon(R.drawable.pill_icon)
-                .setContentTitle(title)
+                .setContentTitle(title)  ///set characteristics of notification
                 .setContentText(notif)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_REMINDER)
