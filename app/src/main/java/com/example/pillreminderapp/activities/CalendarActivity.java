@@ -1,4 +1,4 @@
-package com.example.pillreminderapp;
+package com.example.pillreminderapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,13 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MedInfoActivity extends AppCompatActivity {
-// lolololol
+import com.example.pillreminderapp.R;
+
+public class CalendarActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_med_info);
+        setContentView(R.layout.activity_calendar);
 
     }
 

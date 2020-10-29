@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MedInfoActivity">
+    tools:context=".activities.MedInfoActivity">
 
     <ImageButton
         android:id="@+id/buttonToHome_arrow"

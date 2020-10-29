@@ -1,4 +1,4 @@
-package com.example.pillreminderapp;
+package com.example.pillreminderapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
@@ -8,6 +8,9 @@ import android.app.Notification;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+
+import com.example.pillreminderapp.AppNotif;
+import com.example.pillreminderapp.R;
 
 public class MainActivity extends AppCompatActivity {
     private NotificationManagerCompat notificationManager;

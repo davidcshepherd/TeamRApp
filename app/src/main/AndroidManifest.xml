@@ -10,17 +10,17 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MedsActivity"></activity>
-        <activity android:name=".MedInfoActivity" />
-        <activity android:name=".CalendarActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MedsActivity"></activity>
+        <activity android:name=".activities.MedInfoActivity" />
+        <activity android:name=".activities.CalendarActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity" />
+        <activity android:name=".activities.SettingsActivity" />
     </application>
 
 </manifest>
